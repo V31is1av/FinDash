@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФинДаш</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-cjcfj5FPLehFaNzALtP2F/yJpX8JSnuy4U8XqRYb5Ll+eS2p21l27nV5+j5eREPe" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 0 0 0 0;
+        }
+
+        nav {
+        background-color: #2c3e50;
+        padding: 10px;
+        text-align: center;
+        border-radius: 0;
+        position: fixed;
+        height: 100%;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+        top: 0;
+    }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0; /* Adjusted padding values */
+    margin: 0 0 5px; /* Adjusted margin-bottom value */
+    font-weight: bold;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    position: relative;
+    display: inline-block;
+    line-height: 2;
+}
+
+.menu-divider {
+    width: 100%;
+    height: 3px;
+    background-color: #34495e;
+    margin: 5px;
+}
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 0;
+            margin: 5px 0 15px;
+            padding-bottom: 10px !important;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background-color 0.3s;
+            position: relative;
+            display: inline-block;
+        }
+
+        nav a:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: px;
+            background-color: white;
+            bottom: 0;
+            left: 0;
+            margin-top: 1px;
+        }
+
+        nav a:hover {
+            background-color: #3498db;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 180px;
+        }
+
+        .dashboard,
+        .financial-accounts,
+        .bank-offers,
+        .additional-features,
+        .business-model,
+        .impact {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .bar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .vertical-bar,
+        .horizontal-bar {
+            width: 290px;
+            height: 200px;
+            background-color: #e0512d;
+            margin-right: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            flex-direction: column;
+        }
+
+        .horizontal-bar {
+            height: 120px;
+            background-color: #ffac1c;
+            margin-bottom: 20px;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .bar:hover {
+            background-color: #c0392b;
+        }
+footer {
+    background: linear-gradient(to right, #111b3c, #192a56, #1c2331);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 0; /* Set border-radius to 0 */
+    margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-hieU+3pCtWunLM8FvtfN+J4cAnj1dA8XnWGhq0EBslnD0yaA5pRCOsnuCVvsZG5FBk1BBZGc+nEze1eNlf3D6Q==" crossorigin="anonymous" />
+</head>
+</head>
+<body>
+
+   <header style="background: linear-gradient(to right, #111b3c, #192a56, #1c2331); color: white; padding: 15px; text-align: center; border-radius: 10px 10px 0 0;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <img src="C:\Users\PC\Pictures\OIG1hh.jpg" alt="FinDash Logo" style="height: 50px; margin-right: 10px;">
+        <h1 style="margin: 0;">FinDash</h1>
+    </div>
+</header>
+
+    <nav>
+        <a href="#home">Начало</a>
+        <div class="menu-divider"></div>
+        <a href="#services">Dashboard</a>
+        <div class="menu-divider"></div>
+        <a href="#social-investing"><i class="fas fa-crown"></i>ИнвестоСфера</a>
+<div class="menu-divider"></div>
+<a href="#about">Календар</a>
+<div class="menu-divider"></div>        
+        <a href="#automatic-investments">Образователна Библиотека</a>
+<div class="menu-divider"></div>
+        <a href="#about">Инвестиции</a>
+<div class="menu-divider"></div>
+        <a href="#about">Помощ</a>
+<div class="menu-divider"></div>
+        <a href="#contact">Контакти</a>
+<div class="menu-divider"></div>
+        <a href="#about">За Нас</a>
+    </nav>
+
+    <main>
+        <section class="dashboard">
+            <h2 class="section-title">Финансово Табло</h2>
+            <div class="bar-container">
+                <div class="vertical-bar">1</div>
+                <div class="vertical-bar">2</div>
+                <div class="vertical-bar">3</div>
+                <div class="vertical-bar">4</div>
+            </div>
+        </section>
+
+        <section class="financial-accounts">
+            <h2 class="section-title">Финансови Сметки</h2>
+            <div class="bar-container">
+                <div class="horizontal-bar">Банка A - $10,000</div>
+                <div class="horizontal-bar">Банка B - $15,000</div>
+                <div class="horizontal-bar">Банка C - $8,000</div>
+                <div class="horizontal-bar">Банка D - $20,000</div>
+            </div>
+        </section>
+
+        <section class="bank-offers">
+            <h2 class="section-title">Отлични Оферти от Спонсорирани Банки</h2>
+            <div class="bar-container">
+                <div class="vertical-bar">Информация за Оферта 1</div>
+                <div class="vertical-bar">Информация за Оферта 2</div>
+                <div class="vertical-bar">Информация за Оферта 3</div>
+                <div class="vertical-bar">Информация за Оферта 4</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Допълнителни секции с барове -->
+    <!-- .additional-features, .business-model, .impact -->
+
+    <footer style="background: linear-gradient(to right, #111b3c, #192a56, #1c2331); color: white; text-align: center; padding: 5px; border-radius: 0 0 10px 10px; margin-top: 10px;">
+        <p>&copy; 2024 ФинДаш. Всички права запазени.</p>
+        <p><a href="#privacy">Политика за поверителност</a> | <a href="#terms">Условия за ползване</a></p>
+    </footer>
+
+
+</body>
+</html>
